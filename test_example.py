@@ -43,6 +43,6 @@ def test_open_url(target_url):
 
         expect(page).not_to_have_title(re.compile("^$"))
 
-        page.close()
+        page.close() # closes the tab
         if not is_cdp:
-            browser.close()
+            browser.close() # closes the whole browser (only when it launched a new one)
