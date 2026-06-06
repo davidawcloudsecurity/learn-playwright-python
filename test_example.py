@@ -2,6 +2,9 @@ import re
 import pytest
 from playwright.sync_api import sync_playwright, expect
 
+# & "C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222 --user-data-dir=C:\temp\chrome_debug_profile 
+# python -m pytest test_example.py --url https://google.com
+
 # Configuration
 CDP_URL = "http://127.0.0.1:9222"
 DEFAULT_URL = "https://playwright.dev/"
